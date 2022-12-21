@@ -1,0 +1,46 @@
+<!DOCTYPEhtml >
+< html  lang =" pt " >
+< cabeça >
+    < meta  charset =" UTF-8 " >
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" janela de visualização " conteúdo =" largura=largura do dispositivo, escala inicial=1,0 " >
+    < title > Minha leitura</ title > 
+    < link  rel =" folha de estilo " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " >
+    < link  href =" css/style.css " rel =" folha de estilo " >
+</ cabeça >
+< corpo >
+    < cabeçalho > MINHA LEITURA </ cabeçalho >
+    < div  class =" recipiente de pesquisa " >
+        
+    </ div >
+    < div  class =" botões " >
+        < button  id =" addBook " class =" addButton " onclick =" openAddScreen() " > Adicionar Livro </ button >    
+         </ div >
+    < div  class =" form-popup " id =" meuFormulário " >
+        < form  class =" form-container " >
+            < h1 > Acrescentar Livro </ h1 >
+            < h >
+            < label  for =" titleBook " > < b > Título: </ b > </ label >
+            < input  type =" text " id =" titleBook " placeholder =" Livro " name =" titleBook " obrigatório >
+            < label  for =" autor " > < b > Autor: </ b > </ label >
+            < input  type =" text " id =" autor " placeholder =" Autor " name =" autor " obrigatório >
+            < label  for =" status " > < b > Classificação: </ b > </ label >
+            < selecione  nome =" status " id =" status " >
+                < valor da opção  =" Visto " > Visto </ opção >
+                < valor da opção  =" Não visto " selecionado > Não visto </ opção >
+            </ selecione >
+            < button  type =" button " id =" bttCreateBook " class =" btn " onclick =" addBooks();closeForm(); " > Adicionar </ button >
+        </ forma >
+    </ div >
+    < id da tabela  =" minhaTabela " >
+        < tr >
+            < th > Número </ th >
+            < th > Título </ th >
+            < th > Autor </ th >
+            < th > Status </ th >
+          
+        </ tr >
+    </ tabela >
+    < script  src =" js/script.js " > </ script >
+</ corpo >
+</ html >
