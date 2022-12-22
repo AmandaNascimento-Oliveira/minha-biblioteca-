@@ -1,0 +1,162 @@
+{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 30px;
+    text-align: center;
+    height: 20%;
+    color: rgb(255, 221, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+.addButton{
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    margin: 2%;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+.buttons{
+
+  width: 40%;
+  margin: 2%;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  align-items: center;
+  top:20%;
+  left:40%;
+  border: 3px solid #965ea7;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 10px;
+  background-color: #333;
+  color: rgb(255, 227, 11);
+  border-radius: 5px;
+} 
+
+.form-container input[type=text], #status{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: rgb(62, 37, 135);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: rgb(255, 0, 0);
+}
+
+.form-container .btn:hover, .start-game-button:hover {
+  opacity: 1;
+}
+.form-container .start-game-button:disabled {
+    background-color: rgb(146, 146, 146);
+}
+
+table {
+  text-align: center;
+  margin: 0% 2% 0% 2%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 96%;
+}
+
+th{
+  background-color: #333;
+  color: white;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  background-color: rgb(193, 188, 205);
+}
+
+.search-container {
+  width: 52%;
+  float: left;
+  margin: 2%;
+} 
+
+.search-container button {
+  padding: 6px 10px;
+  margin: 2% 2% 2% 0%;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+#search{
+  padding: 6px;
+  width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 2% 2% 2% 0%;
+    padding: 14px;
+  }
+}
+
+.statusL,.btn{
+  text-align: center;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  padding: 2%;
+}
+
+h1{
+  text-align: center;
+  padding: 5%;
+}
